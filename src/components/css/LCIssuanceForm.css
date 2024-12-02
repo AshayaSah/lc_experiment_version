@@ -1,0 +1,328 @@
+.form-section{
+  margin-bottom: 1.5rem;
+}
+
+.form-section-title {
+  background-color: #e0f7fa; /* Light blue background */
+  padding: 8px 12px; /* Reduced padding */
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #00334d; /* Mixed blue-black color for text */
+  position: relative;
+  margin-bottom: 1.5rem;
+  text-align: left; /* Align text to the left */
+}
+
+/* First full-width underline with gradient */
+.form-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 4px;
+  left: 0;
+  width: 100%; /* Full-width underline */
+  height: 2px;
+  background:  #00334d; /* Gradient from blue-black to blue */
+}
+
+/* Second full-width underline below the first */
+.form-section-title::before {
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%; /* Full-width underline */
+  height: 2px;
+  background:  #00334d; /* Gradient from blue to blue-black */
+}
+
+/* Additional styling for the second form's sections */
+.form-description {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.form-textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.form-radio-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-radio-group label {
+  font-size: 14px;
+  color: #333333;
+}
+
+.form-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-checkbox-group label {
+  font-size: 14px;
+  color: #333333;
+}
+
+/* Custom style for the submit button */
+.custom-submit-button {
+  background-color: #28a745;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding: 14px 28px;
+  font-weight: bold;
+}
+
+.custom-submit-button:hover {
+  background-color: #218838;
+}
+
+/* Error message styling */
+.form-error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+
+
+/*Sections additional styling */
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.form-section-item {
+  flex: 1 1 30%; /* Allow each section to grow and shrink, with a base width of 30% */
+  margin: 10px; /* Add some margin for spacing */
+  min-width: 250px; /* Minimum width for each section */
+}
+
+.form-field-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tANDc{
+  display: flex;
+  padding: 1rem;
+  background-color: #d5dde1;
+}
+
+.tANDc input{
+  margin-right: 1rem;
+}
+
+/* Media Queries */
+/* Media query for MOBILE */
+@media (max-width: 600px) {
+  .flex-row {
+    flex-direction: column; /* Stack sections vertically on mobile */
+  }
+
+  .form-field-container{
+    flex-direction: column;
+  }
+  .form-section-item {
+    flex: 1 1 100%; /* Each section takes full width on mobile */
+  }
+}
+
+/* Media query for tablets and above */
+@media (min-width: 600px) and (max-width: 933px) {
+  .form-section-item {
+    flex: 1 1 45%; /* Adjust width for tablets */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 933px) {
+  .form-section-item {
+    flex: 1 1 30%; /* Adjust width for larger screens */
+  }
+}
+
+
+
+
+
+
+
+/* Dropdown button styling */
+/* Wrapper for the select element to include the custom arrow */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.form-select {
+  width: 100%;
+  padding: 9px 20px;
+  padding-right: 40px; /* Extra space for the custom arrow */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 16px;
+  color: #333;
+  appearance: none; /* Removes the default dropdown arrow */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Change the border and background color on hover */
+.form-select:hover {
+  border-color: #007bff;
+  background-color: #f1f9ff;
+}
+
+/* Style for the focus state */
+.form-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Custom arrow inside the wrapper */
+.custom-select-wrapper::after {
+  content: ''; /* Empty content for the arrow */
+  position: absolute;
+  top: 50%;
+  right: 15px; /* Positioning inside the padding-right */
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid black; /* Arrow color */
+  transform: translateY(-50%); /* Vertically centers the arrow */
+  pointer-events: none;
+}
+
+
+
+/*Document form field */
+.document-form-field{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.document-form-field div{
+  flex-wrap: wrap;
+}
+
+.document-form-field label{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.document-margin{
+  margin-left: 1.7rem;
+}
+
+.file-upload-row{
+  margin-bottom: 1rem;
+}
+
+.text-section{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+
+/* Progress Bar Container */
+.progress-bar-container {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+/* Progress Bar Steps */
+.progress-bar-container ul {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.progress-bar-container ul .step {
+  position: relative;
+  text-align: center;
+  flex: 1;
+}
+
+.progress-bar-container ul .step::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #00334d;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.progress-bar-container ul .step::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background-color: #ccc;
+  top: 50%;
+  left: 50%;
+  transform: translateX(0);
+  z-index: 1;
+  width: 100%;
+}
+
+.progress-bar-container ul .step:last-child::after {
+  display: none; /* No line after the last step */
+}
+
+/* Active Step */
+.progress-bar-container ul .step.active::before {
+  background-color: #ffcc00;
+  transform: scale(1.2);
+}
+
+.progress-bar-container ul .step.active ~ .step::after {
+  background-color: #00334d;
+}
+
+/* Links */
+.progress-bar-container ul .step a {
+  display: block;
+  margin-top: 1.5rem;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #00334d;
+}
+
+.progress-bar-container ul .step a:hover {
+  color: #ffcc00;
+}

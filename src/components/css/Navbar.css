@@ -1,0 +1,80 @@
+.navbar-container {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Horizontal, vertical, blur radius, color */
+    height: 70px;
+  }
+
+.navbar {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+    background-color: white;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img{
+    height: 60px;
+    max-width: 250px;
+}
+
+.login-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.user-name{
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.user-name span {
+    font-size: 18px; /* Increase font size for a more prominent display */
+    font-family: 'Poppins', sans-serif; /* Trendy and modern font */
+    font-weight: 600; /* Bold text */
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Blue gradient */
+    color: transparent;
+    -webkit-background-clip: text; /* Apply the gradient to text */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 2px 5px;
+    transition: all 0.3s ease; /* Smooth transition effect */
+  }
+  
+  .user-name span:hover {
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    transform: scale(1.1); /* Slight scale-up effect on hover */
+  }
+
+.logout-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.logout-button:hover {
+    background-color: #2150a6; /* Hover effect */
+  }
+
+  .login-button:hover {
+    background-color:  #2150a6;
+  }

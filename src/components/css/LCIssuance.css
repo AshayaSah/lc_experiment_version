@@ -1,0 +1,56 @@
+.lc-issuance-container{
+  max-width: 90%;
+  margin: auto;
+}
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.apply-button {
+  margin-bottom: 20px;
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-tab {
+  background-color: #007bff;
+  color: white;
+}
+
+.lc-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lc-table th, .lc-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.lc-table th {
+  background-color: #f2f2f2;
+}

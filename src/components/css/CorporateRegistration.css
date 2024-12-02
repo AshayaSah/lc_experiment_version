@@ -1,0 +1,221 @@
+/* CorporateRegistrationForm.css */
+
+/* Main container with shadow and padding */
+.form-container {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+  
+  /* Title Heading */
+  .form-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Subheading and Logo */
+  .form-subheading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-logo {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .form-subheading-text {
+    font-size: 18px;
+    color: #555555;
+  }
+  
+  /* Horizontal Line with custom color */
+  .form-horizontal-line {
+    margin: 20px 0;
+    border: 0.5px solid #eeeeee;
+  }
+  
+  /* Field Row */
+  .form-field-row {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  /* Field container */
+  .form-field {
+    flex: 0 0 48%;
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 15px;
+  }
+
+  .paragraph{
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  
+/* General styling */
+.form-document-submit {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.document-pair {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Updated form-label styling */
+.form-label {
+  font-weight: 600;
+  font-size: 14px; /* New font size */
+  color: #333333;  /* New color */
+  margin-bottom: 5px; 
+}
+
+label{
+  font-weight: 600;
+  font-size: 14px; /* New font size */
+  color: #333333;  /* New color */
+  margin-bottom: 5px; 
+}
+
+.form-file-upload {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Media query for MOBILE */
+@media (max-width: 600px) {
+  .form-field-row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-field{
+    flex: 0 0 100%;
+  }
+}
+
+/* Media query for tablets and above */
+@media (min-width: 933px) {
+  .form-document-submit {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .document-pair {
+    width: 48%; /* Two document pairs per row */
+  }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1134px) {
+  .form-document-submit {
+    gap: 3rem;
+  }
+
+  .document-pair {
+    width: 30%; /* Three document pairs per row */
+  }
+}
+
+/* File upload input styling */
+.form-file-upload {
+  margin-top: 5px; /* Add some space between label and input */
+}
+
+  /* Labels */
+  .form-label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  
+  /* Input fields */
+  .form-input {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+  }
+  
+  /* Document Request */
+  .form-document-request {
+    margin: 20px 0;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  /* File Upload */
+  /* .form-file-upload {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  } */
+  
+  .form-file-upload:hover {
+    border-color: #007bff;
+    background-color: #f1f9ff;
+  }
+  
+  /* Buttons */
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .form-button {
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .form-button:hover {
+    opacity: 0.9;
+  }
+  
+  .save-button {
+    background-color: #6c757d;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+  }
