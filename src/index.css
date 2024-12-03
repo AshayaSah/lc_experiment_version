@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', 'sans-serif';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
 }
 
+@layer components {
+  
 @layer components {
 	.table-button-container {
 		@apply flex flex-wrap gap-2 mb-4
@@ -75,4 +77,5 @@
 		@apply text-center text-gray-500 py-6 italic
 	}
 
+}
 }

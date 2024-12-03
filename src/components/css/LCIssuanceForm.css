@@ -1,38 +1,5 @@
-.form-section{
+.form-section {
   margin-bottom: 1.5rem;
-}
-
-.form-section-title {
-  background-color: #e0f7fa; /* Light blue background */
-  padding: 8px 12px; /* Reduced padding */
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #00334d; /* Mixed blue-black color for text */
-  position: relative;
-  margin-bottom: 1.5rem;
-  text-align: left; /* Align text to the left */
-}
-
-/* First full-width underline with gradient */
-.form-section-title::after {
-  content: '';
-  position: absolute;
-  bottom: 4px;
-  left: 0;
-  width: 100%; /* Full-width underline */
-  height: 2px;
-  background:  #00334d; /* Gradient from blue-black to blue */
-}
-
-/* Second full-width underline below the first */
-.form-section-title::before {
-  content: '';
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  width: 100%; /* Full-width underline */
-  height: 2px;
-  background:  #00334d; /* Gradient from blue to blue-black */
 }
 
 /* Additional styling for the second form's sections */
@@ -100,10 +67,6 @@
   margin-top: 10px;
 }
 
-
-
-
-
 /*Sections additional styling */
 .flex-row {
   display: flex;
@@ -122,13 +85,13 @@
   justify-content: space-between;
 }
 
-.tANDc{
+.tANDc {
   display: flex;
   padding: 1rem;
   background-color: #d5dde1;
 }
 
-.tANDc input{
+.tANDc input {
   margin-right: 1rem;
 }
 
@@ -139,7 +102,7 @@
     flex-direction: column; /* Stack sections vertically on mobile */
   }
 
-  .form-field-container{
+  .form-field-container {
     flex-direction: column;
   }
   .form-section-item {
@@ -160,12 +123,6 @@
     flex: 1 1 30%; /* Adjust width for larger screens */
   }
 }
-
-
-
-
-
-
 
 /* Dropdown button styling */
 /* Wrapper for the select element to include the custom arrow */
@@ -203,7 +160,7 @@
 
 /* Custom arrow inside the wrapper */
 .custom-select-wrapper::after {
-  content: ''; /* Empty content for the arrow */
+  content: ""; /* Empty content for the arrow */
   position: absolute;
   top: 50%;
   right: 15px; /* Positioning inside the padding-right */
@@ -216,41 +173,38 @@
   pointer-events: none;
 }
 
-
-
 /*Document form field */
-.document-form-field{
+.document-form-field {
   display: flex;
   gap: 1rem;
   align-items: center;
   margin-bottom: 1rem;
 }
 
-.document-form-field div{
+.document-form-field div {
   flex-wrap: wrap;
 }
 
-.document-form-field label{
+.document-form-field label {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 5px;
 }
 
-.document-margin{
+.document-margin {
   margin-left: 1.7rem;
 }
 
-.file-upload-row{
+.file-upload-row {
   margin-bottom: 1rem;
 }
 
-.text-section{
+.text-section {
   margin-top: 1rem;
   margin-bottom: 1rem;
   text-align: justify;
 }
-
 
 /* Progress Bar Container */
 .progress-bar-container {

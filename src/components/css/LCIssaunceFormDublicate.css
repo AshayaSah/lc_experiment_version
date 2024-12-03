@@ -1,0 +1,21 @@
+.lc-form-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* .form-title {
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 0.8rem;
+} */
+
+.sticky-stepper{
+  background: rgba(255, 255, 255, 0.15); /* Transparent white */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Border for enhanced glass effect */
+}
