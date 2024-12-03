@@ -1,15 +1,6 @@
 /* CorporateRegistrationForm.css */
 
 /* Main container with shadow and padding */
-.form-container {
-    max-width: 90%;
-    margin: 30px auto;
-    padding: 30px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    font-size: 0.8rem;
-  }
   
   /* Title Heading */
   .form-title {

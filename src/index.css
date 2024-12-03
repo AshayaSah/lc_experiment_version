@@ -1,11 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Poppins', 'sans-serif';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", "sans-serif";
+}
+
+@layer components {
+  .form-container {
+    @apply max-w-[90%] mx-auto my-8;
+  }
+
+  .form-section-title {
+    @apply relative bg-[#e0f7fa] px-3 py-2 text-[#333]  text-lg font-semibold rounded-[1rem] text-left;
+  }
+
+  .form-section-title::after,
+  .form-section-title::before {
+    content: "";
+    @apply absolute left-0 w-full h-[2px] bg-[#333];
+  }
+
+  .form-section-title::after {
+    @apply bottom-1;
+  }
+
+  .form-section-title::before {
+    @apply bottom-0;
+  }
 }
