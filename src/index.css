@@ -3,9 +3,76 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
+* {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Poppins', 'sans-serif';
+}
+
+@layer components {
+	.table-button-container {
+		@apply flex flex-wrap gap-2 mb-4
+	}
+
+	.table-button-tabs {
+		@apply flex items-center gap-2 px-4 py-2 border border-b-0 rounded-md text-sm font-medium transition
+	}
+
+	.table-input-container {
+		@apply flex items-center justify-between my-4 border rounded-lg px-2 py-1
+	}
+
+	.table-input-field {
+		@apply w-full px-2 py-1 text-sm focus:outline-none focus:ring-blue-500
+	}
+
+	.table-container {
+		@apply overflow-x-auto
+	}
+
+	.table-child-container {
+		@apply w-full bg-white table-fixed rounded-lg shadow-md overflow-hidden border-collapse border-gray-300
+	}
+
+	.table-rows {
+		@apply bg-[#0087BE] text-white text-xs sm:text-sm
+	}
+
+	.table-heading {
+		@apply pl-3 py-2 text-left w-full sm:w-1/4 border-b border-gray-300
+	}
+
+	.table-body {
+		@apply text-black text-xs sm:text-sm
+	}
+
+	.table-body-rows {
+		@apply transition duration-200 border-b border-gray-200 box-border
+	}
+
+	.table-body-data {
+		@apply text-left w-full py-2 pl-3
+	}
+
+	.table-body-data-container {
+		@apply flex flex-col sm:flex-row items-center justify-center gap-2 w-full text-xs sm:text-sm py-2
+	}
+
+	.table-body-status {
+		@apply text-center w-full sm:w-1/2
+	}
+
+	.table-body-button-container {
+		@apply flex gap-3 w-full sm:w-2/3 justify-center sm:justify-end sm:flex-row flex-col pr-4
+	}
+
+	.table-body-data-buttons {
+		@apply bg-[#0087BE] text-white w-8 h-8 flex items-center justify-center rounded-md mb-2 sm:mb-0 shadow-md backdrop-blur-lg backdrop-brightness-50 hover:bg-blue-700/70 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out border border-white/20
+	}
+
+	.table-error-data {
+		@apply text-center text-gray-500 py-6 italic
+	}
+
 }
